@@ -14,7 +14,7 @@
 <body>
     <section class="hero">
         <div class="hero-img-container">
-            <img src="./images/illustration-hero.svg" alt="An illustration of a tablet">
+            <img class="hero-img" src="./images/illustration-hero.svg" alt="An illustration of a tablet">
             <div class="decorative-block"></div>
         </div>
 
@@ -22,8 +22,8 @@
                 browser tab and see your sites load instantly. Try it for free.</p>
         </h1>
         <div class="button-group">
-            <button class="primary">Get it on Chrome</button>
-            <button class="secondary">Get it on Firefox</button>
+            <button class="primary-btn">Get it on Chrome</button>
+            <button class="secondary-btn">Get it on Firefox</button>
         </div>
     </section>
 
@@ -33,59 +33,51 @@
                 Your bookmarks sync between your devices so you can access them on the go.</p>
         </h2>
         <div class="feature-nav">
-            <div class="divider"></div>
+
 
             <!-- Tab 1 -->
+            <button class="feature-tab active">
+                <h3 class="tab-heading">Simple Bookmarking</h3>
+                <div class="tab-highlight"></div>
+            </button>
 
-            <div class="feature-tab">
-                <a href="#">
-                    <h3>Simple Bookmarking</h3>
-                    <div class="tab-highlight"></div>
-                </a>
-            </div>
-            <div class="divider"></div>
 
             <!-- Tab 2 -->
+            <button class="feature-tab">
+                <h3 class="tab-heading">Speedy Searching</h3>
+                <div class="tab-highlight"></div>
 
-            <div class="feature-tab">
-                <a href="#">
-                    <h3>Speedy Searching</h3>
-                    <div class="tab-highlight"></div>
-                </a>
-            </div>
-            <div class="divider"></div>
+            </button>
+
 
             <!-- Tab 3 -->
+            <button class="feature-tab">
+                <h3 class="tab-heading">Easy Sharing</h3>
+                <div class="tab-highlight"></div>
 
-            <div class="feature-tab">
-                <a href="#">
-                    <h3>Easy Sharing</h3>
-                    <div class="tab-highlight"></div>
-                </a>
-            </div>
-            <div class="divider"></div>
+            </button>
+
         </div>
         <div class="feature-items">
 
             <!-- Feature 1 -->
-
-            <div class="feature-item">
+            <div class="feature-item active">
                 <div class="feature-img-container">
-                    <img src="./images/illustration-features-tab-1.svg" alt="An illustration of a website">
+                    <img class="feature-img" src="./images/illustration-features-tab-1.svg"
+                        alt="An illustration of a website">
                     <div class="decorative-block"></div>
                 </div>
                 <h2>Bookmark in one click<p>Organize your bookmarks however you like. Our simple drag-and-drop interface
                         gives you complete control over how you manage your favourite sites.</p>
                 </h2>
-                <button class="primary">More Info</button>
+                <button class="primary-btn">More Info</button>
 
             </div>
 
             <!-- Feature 2 -->
-
             <div class="feature-item">
                 <div class="feature-img-container">
-                    <img src="./images/illustration-features-tab-2.svg"
+                    <img class="feature-img" src="./images/illustration-features-tab-2.svg"
                         alt="An illustration of a website with magnifying glass">
                     <div class="decorative-block"></div>
 
@@ -93,21 +85,21 @@
                 <h2>Intelligent search<p>Our powerful search feature will help you find saved sites in no time at all.
                         No need to trawl through all of your bookmarks.</p>
                 </h2>
-                <button class="primary">More Info</button>
+                <button class="primary-btn">More Info</button>
 
             </div>
 
             <!-- Feature 3 -->
-
             <div class="feature-item">
                 <div class="feature-img-container">
-                    <img src="./images/illustration-features-tab-3.svg" alt="An illustration of a website with people">
+                    <img class="feature-img" src="./images/illustration-features-tab-3.svg"
+                        alt="An illustration of a website with people">
                     <div class="decorative-block"></div>
                 </div>
                 <h2>Share your bookmarks<p>Easily share your bookmarks and collections with others. Create a shareable
                         link that you can send at the click of a button.</p>
                 </h2>
-                <button class="primary">More Info</button>
+                <button class="primary-btn">More Info</button>
 
             </div>
         </div>
@@ -122,26 +114,29 @@
 
             <!-- Card 1 -->
             <div class="download-card">
-                <h3>Add to Chrome<p>Minimum version 62</p>
-                </h3>
-                <img src="./images/bg-dots.svg" alt="">
-                <button class="primary">Add & Install Extension</button>
+                <img class="browser-logo" src="./images/logo-chrome.svg" alt="chrome logo">
+                <h3 class="download-h3">Add to Chrome</h3>
+                <h4 class="download-h4">Minimum version 62</h4>
+                <img class="dots" src="./images/bg-dots.svg" alt="">
+                <button class="primary-btn">Add & Install Extension</button>
             </div>
 
             <!-- Card 2 -->
             <div class="download-card">
-                <h3>Add to Firefox<p>Minimum version 55</p>
-                </h3>
-                <img src="./images/bg-dots.svg" alt="">
-                <button class="primary">Add & Install Extension</button>
+                <img class="browser-logo" src="./images/logo-firefox.svg" alt="firefox logo">
+                <h3 class="download-h3">Add to Firefox</h3>
+                <h4 class="download-h4">Minimum version 55</h4>
+                <img class="dots" src="./images/bg-dots.svg" alt="">
+                <button class="primary-btn">Add & Install Extension</button>
             </div>
 
             <!-- Card 3 -->
             <div class="download-card">
-                <h3>Add to Opera<p>Minimum version 46</p>
-                </h3>
-                <img src="./images/bg-dots.svg" alt="">
-                <button class="primary">Add & Install Extension</button>
+                <img class="browser-logo" src="./images/logo-opera.svg" alt="opera logo">
+                <h3 class="download-h3">Add to Opera</h3>
+                <h4 class="download-h4">Minimum version 46</h4>
+                <img class="dots" src="./images/bg-dots.svg" alt="">
+                <button class="primary-btn">Add & Install Extension</button>
             </div>
         </div>
     </section>
@@ -156,18 +151,20 @@
             <div class="faq-item"></div>
             <button class="accordian">
                 <h3>What is Bookmark?</h3>
+                <img class="icon-arrow" src="./images/icon-arrow.svg" alt="icon-arrow">
             </button>
             <div class="panel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
                     justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
             </div>
-            <div class="divider"></div>
+
         </div>
 
         <!-- Question 2 -->
         <div class="faq-item"></div>
         <button class="accordian">
             <h3>How can I request a new browser?</h3>
+            <img class="icon-arrow" src="./images/icon-arrow.svg" alt="icon-arrow">
         </button>
         <div class="panel">
             <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
@@ -175,74 +172,72 @@
                 ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
                 Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
         </div>
-        <div class="divider"></div>
+
         </div>
 
         <!-- Question 3 -->
         <div class="faq-item"></div>
         <button class="accordian">
             <h3>Is there a mobile app?</h3>
+            <img class="icon-arrow" src="./images/icon-arrow.svg" alt="icon-arrow">
         </button>
         <div class="panel">
             <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
                 urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
                 sollicitudin ex et ultricies bibendum.</p>
         </div>
-        <div class="divider"></div>
+
         </div>
 
         <!-- Question 4 -->
         <div class="faq-item"></div>
         <button class="accordian">
             <h3>What about other Chromium browsers?</h3>
+            <img class="icon-arrow" src="./images/icon-arrow.svg" alt="icon-arrow">
         </button>
         <div class="panel">
             <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
                 vitae neque eget nisl gravida pellentesque non ut velit.</p>
         </div>
-        <div class="divider"></div>
+
         </div>
-        <button class="primary">More Info</button>
+        <button class="primary-btn">More Info</button>
     </section>
 
     <section class="newsletter">
         <div class="heading-wrapper">
-            <h2 class="small">35,000+ Already Joined</h2>
+            <h2 class="small-h2">35,000+ Already Joined</h2>
             <h2>Stay up-todate with what we're doing</h2>
         </div>
-        <div class="wrapper">
-            <label for="email">
-                <input type="email" placeholder="Enter your email address">
+        <div class="input-wrapper">
+
+            <label class="label-normal" for="email">
+                <input type="email" id="email" placeholder="Enter your email address">
             </label>
-            <button class="accent">Contact Us</button>
+            <div class="error"></div>
+            <button class="accent-btn contact-us">Contact Us</button>
         </div>
+        </div>
+
     </section>
 
     <section class="bottom-nav">
-        <img src="./images/logo-bookmark.svg" alt="bookmark logo">
+        <img class="logo" src="./images/logo-bookmark-light.svg" alt="bookmark logo">
         <div class="nav-links">
             <a href="#">Features</a>
             <a href="#">Pricing</a>
             <a href="#">Contact</a>
         </div>
         <div class="social-links">
-            <a href="#"><img src="./images/icon-facebook.svg" alt="facebook logo"></a>
-            <a href="#"><img src="./images/icon-twitter.svg" alt="twitter logo"></a>
+            <img class="social-link" src="./images/icon-facebook.svg" alt="facebook logo"></a>
+            <img class="social-link" src="./images/icon-twitter.svg" alt="twitter logo"></a>
         </div>
     </section>
-    Features
-    Pricing
-    Contact
-    Login
-
-    Features
-    Pricing
-    Contact
 
     <footer>
         <p class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="#">Your Name Here</a>.
+            Coded by <a href="#">Kevin Gammenthaler</a>.
         </p>
     </footer>
 </body>

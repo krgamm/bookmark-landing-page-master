@@ -1,7 +1,1 @@
-@use "src/scss/base/typography" as *;
 
-@each $tag, $size in $font-sizes {
-  #{$tag} {
-    font-size: $size;
-  }
-}

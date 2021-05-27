@@ -1,1 +1,77 @@
+@use "src/scss/abstracts/colors" as *;
+@use "src/scss/abstracts/type" as *;
+@use "src/scss/base/font-face" as *;
+@use "src/scss/helpers/variables" as *;
 
+// CTA Button Styles
+.primary-btn,
+.secondary-btn,
+.accent-btn {
+  border-style: none;
+  padding: 1em;
+  border-radius: 8px;
+  font-weight: $fw-n;
+}
+.primary-btn,
+.secondary-btn {
+  box-shadow: $ds;
+  margin: 0 0.5em;
+}
+.primary-btn {
+  background-color: var(--clr-primary-100);
+  &:hover {
+    background-color: white;
+    color: var(--clr-primary-100);
+    border-color: var(--clr-primary-100);
+    border-style: solid;
+    border-width: 4px;
+    padding: calc(1em - 4px);
+  }
+}
+.secondary-btn {
+  color: var(--clr-primary-500);
+  background-color: var(--clr-neutrals-light);
+  &:hover {
+    background-color: white;
+    color: var(--clr-primary-500);
+    border-color: var(--clr-neutrals-400);
+    border-style: solid;
+    border-width: 4px;
+    padding: calc(1em - 4px);
+  }
+}
+.accent-btn {
+  background-color: var(--clr-accent-500);
+}
+
+//Feature Tabs Navigation Style
+
+// Accordian FAQ Button
+.accordian {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-style: none;
+  padding: 0;
+  width: 100%;
+  h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+}
+.icon-arrow {
+  height: 100%;
+  width: 30px;
+}
+.panel {
+  &::after {
+    content: "";
+    background-color: var(--clr-neutrals-light);
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+}

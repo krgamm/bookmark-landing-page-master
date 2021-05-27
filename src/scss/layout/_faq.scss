@@ -1,0 +1,14 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .primary-btn {
+    align-self: center;
+  }
+}
+
+.accordian {
+  h3 {
+    text-align: left;
+  }
+}

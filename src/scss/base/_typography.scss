@@ -1,7 +1,43 @@
-$font-sizes: (
-  h1: 48px,
-  h2: 32px,
-  h3: 24px,
-  h4: 18px,
-  p: 18px,
-);
+@use "font-face" as *;
+@use "src/scss/abstracts/colors" as *;
+@use "src/scss/abstracts/type" as *;
+
+@each $tag, $size in $font-sizes {
+  #{$tag} {
+    font-size: $size;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-primary-500);
+  font-weight: $fw-b;
+  line-height: 1.1;
+  text-align: center;
+}
+h4 {
+  font-weight: $fw-n;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+p {
+  color: var(--clr-neutrals-100);
+  font-weight: $fw-n;
+  line-height: 1.6;
+  margin-top: 1em;
+  letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1em;
+}
+
+button {
+  color: white;
+  font-weight: $fw-n;
+}

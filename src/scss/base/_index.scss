@@ -1,3 +1,32 @@
 @forward "font-face";
 @forward "typography";
 @forward "reset";
+
+@use "font-face" as *;
+@use "src/scss/abstracts/colors" as *;
+
+body {
+  color: var(--clr-neutrals-100);
+  font-size: 62.5%;
+  font-family: $ff-s;
+  font-weight: $fw-n;
+  line-height: 1.4;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 13.6em;
+  padding: 0 3em;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  font-style: none;
+  text-decoration: none;
+  color: white;
+}
