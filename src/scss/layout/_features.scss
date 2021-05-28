@@ -1,10 +1,29 @@
 @use "src/scss/base/font-face" as *;
+@use "src/scss/abstracts/mixins" as *;
 
+.feature-img-container {
+  position: relative;
+  width: 100%;
+  @include mq {
+    min-width: 520px;
+  }
+}
+.feature-img-container {
+  .decorative-block {
+    left: 0;
+    border-radius: 0 200px 200px 0;
+  }
+}
 .feature-nav {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin-bottom: 3em;
+  @include mq {
+    width: 40em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .feature-tab {
   padding: 0;
@@ -19,6 +38,9 @@
     width: 100%;
     background-color: var(--clr-neutrals-light);
   }
+  @include mq {
+    width: 100%;
+  }
 }
 .tab-highlight {
   background-color: transparent;
@@ -26,12 +48,18 @@
   width: 50%;
   max-width: 250px;
   margin: auto;
+  @include mq {
+    width: 100%;
+  }
 }
 .tab-heading {
   color: var(--clr-neutrals-100);
   font-weight: $fw-n;
   &:hover {
     color: var(--clr-accent-500);
+  }
+  @include mq {
+    font-size: 1.2rem;
   }
 }
 .active {
@@ -50,10 +78,47 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 3em;
-  .primary-btn {
-    width: 100%;
+  @include mq {
+    display: none;
+    flex-direction: row;
   }
 }
 .active {
   display: flex;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    width: 80%;
+    max-width: 640px;
+  }
+}
+
+.feature-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 3em;
+    h2 {
+      text-align: left;
+      width: 80%;
+      margin-top: 2em;
+      margin-bottom: 0;
+    }
+    .primary-btn {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
+.feature-items {
+  width: 100%;
 }

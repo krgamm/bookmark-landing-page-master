@@ -4,6 +4,7 @@
 
 @use "font-face" as *;
 @use "src/scss/abstracts/colors" as *;
+@use "src/scss/abstracts/mixins" as *;
 
 body {
   color: var(--clr-neutrals-100);
@@ -14,11 +15,14 @@ body {
   background-color: white;
   padding: 0;
   margin: 0;
+
+  @include mq {
+    font-size: 1.125rem;
+  }
 }
 
 section {
-  margin-bottom: 13.6em;
-  padding: 0 3em;
+  margin-bottom: 10em;
 }
 
 button {

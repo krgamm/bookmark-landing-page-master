@@ -1,11 +1,15 @@
 @use "src/scss/helpers/variables" as *;
 @use "src/scss/abstracts/colors" as *;
+@use "src/scss/abstracts/mixins" as *;
 
 .download-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  @include mq($width: 1012px) {
+    height: 500px;
+  }
 }
 .download-card {
   display: flex;
@@ -26,6 +30,9 @@
     width: auto;
     margin: 1.5em;
   }
+  @include mq($width: 1012px) {
+    margin-bottom: 0;
+  }
 }
 .browser-logo {
   align-self: center;
@@ -34,4 +41,26 @@
 }
 .dots {
   margin-top: auto;
+}
+
+@include mq($width: 1012px) {
+  .chrome {
+    margin-bottom: auto;
+  }
+  .firefox {
+    align-self: center;
+  }
+  .opera {
+    align-self: flex-end;
+  }
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    width: 80%;
+    max-width: 640px;
+  }
 }
