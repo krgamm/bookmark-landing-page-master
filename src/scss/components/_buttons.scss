@@ -42,6 +42,14 @@
 }
 .accent-btn {
   background-color: var(--clr-accent-500);
+  &:hover {
+    background-color: white;
+    color: var(--clr-accent-500);
+    border-color: var(--clr-accent-500);
+    border-style: solid;
+    border-width: 4px;
+    padding: calc(1em - 4px);
+  }
 }
 
 //Feature Tabs Navigation Style

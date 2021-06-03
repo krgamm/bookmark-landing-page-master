@@ -29,6 +29,8 @@
 .feature-img {
   padding: 3em;
   width: 90%;
+  max-width: 900px;
+  margin-left: auto;
 }
 .decorative-block {
   position: absolute;
@@ -50,7 +52,6 @@
   @include mq {
     justify-content: left;
     button {
-      margin: 0;
       margin-right: 1;
     }
   }
@@ -78,4 +79,16 @@
       }
     }
   }
+}
+
+.menu-btn {
+  background-color: transparent;
+  border-style: none;
+}
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 3em auto;
 }

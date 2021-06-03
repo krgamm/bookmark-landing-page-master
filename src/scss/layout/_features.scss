@@ -6,6 +6,9 @@
   width: 100%;
   @include mq {
     min-width: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
 }
 .feature-img-container {
