@@ -50,7 +50,7 @@ SASS is an extremely hepful language that inspired me to organize my file archit
 ### Useful resources
 
 - [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) - Kevin Powell has great insights and resource recommendations. This helped me for the majority of the project.
-- As always, a little bit of Stack Overflow sprinckled in my helpful resources.
+- As always, a little bit of Stack Overflow sprinkled in my helpful resources.
 
 ## Author
 
